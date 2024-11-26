@@ -3,6 +3,7 @@ import { buttonData } from "../../buttonData"
 import computerImage from "../assets/Apple Computers.png"
 // import bigComputerImage from "../assets/Body Details.png"
 import Button from "../Components/Button"
+import { FcNeutralTrading } from "react-icons/fc";
 
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='bg-gray-900' >
+    <div className='bg-gray-900 text-white' >
       <div className="block lg:flex bg-gray-900 lg:p-10 ">
         <div className="">
           <p className="p-10 font-sans text-[38px] lg:text-[66px] text-white font-bold " >
@@ -51,12 +52,12 @@ const Home = () => {
         <p>Finance flow has been featured on</p>
       </div>
 
-      <div className='p-10 grid grid-cols-2 lg:flex lg:flex-row lg:space-x-5 justify-center' >
-        <p>Company</p>
-        <p>Company</p>
-        <p>Company</p>
-        <p>Company</p>
-        <p className='grid grid-flow-row' >Company</p>
+      <div className='py-10 px-16 grid grid-cols-2 lg:flex lg:flex-row lg:gap-44 text-center font-bold ' >
+        <p className='flex items-center pt-5 lg:pt-0' > <FcNeutralTrading className='w-8 h-8 mr-1' /> Company</p>
+        <p className='flex items-center pt-5 lg:pt-0' > <FcNeutralTrading className='w-8 h-8 mr-1' /> Company</p>
+        <p className='flex items-center pt-5 lg:pt-0' > <FcNeutralTrading className='w-8 h-8 mr-1' /> Company</p>
+        <p className='flex items-center pt-5 lg:pt-0' > <FcNeutralTrading className='w-8 h-8 mr-1' /> Company</p>
+        <p className='flex col-span-2 items-center pt-5 lg:pt-0 mx-auto lg:mx-0 '><FcNeutralTrading className='w-8 h-8 mr-1' /> Company</p>
       </div>
     </div>
   )
