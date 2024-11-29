@@ -1,9 +1,33 @@
-import { useEffect } from 'react'
-import { buttonData } from "../../buttonData"
-import computerImage from "../assets/Apple Computers.png"
+import { useEffect } from 'react';
+import { buttonData } from "../../buttonData";
+import { cardOneData } from '../../cardOneData';
+import { cardTwoData } from '../../cardTwoData';
 // import bigComputerImage from "../assets/Body Details.png"
-import Button from "../Components/Button"
-import { FcNeutralTrading } from "react-icons/fc";
+import Button from "../Components/Button";
+import Button2 from "../Components/Button2";
+import Button3 from "../Components/Button3";
+import Card1 from '../Components/Card1';
+import Card2 from '../Components/Card2';
+import Carousel from '../Components/Carousel';
+import computerImage from "../assets/Apple Computers.png";
+import cOne from '../assets/C_1.png';
+import cTwo from '../assets/C_2.png';
+import cThree from '../assets/C_3.png';
+import cFour from '../assets/C_4.png';
+import cFive from '../assets/C_5.png';
+import twoPhones from "../assets/Group 2.png";
+import twophones2 from "../assets/twophones2.png";
+import market from "../assets/market.png";
+import light from "../assets/light.png";
+import lock from "../assets/lock.png";
+import secure from "../assets/secure.png";
+import ninenine from "../assets/ninenine.png";
+import message247 from "../assets/message247.png";
+import download from "../assets/download.png";
+import account from "../assets/account.png";
+import trade from "../assets/trade.png";
+import video from "../assets/video.png";
+
 
 
 const Home = () => {
@@ -37,7 +61,7 @@ const Home = () => {
 
             <span className=" mt-5 lg:mt-0 lg:ml-5 " >
               {buttonData.slice(1).map((buttonData, idx) => (
-                <Button key={idx} name={buttonData.name} id={`btn2-${idx}`} style={{ backgroundColor: 'white' }} />
+                <Button2 key={idx} name={buttonData.name} id={`btn2-${idx}`} />
               ) )}
             </span>
           </div>
@@ -53,12 +77,137 @@ const Home = () => {
       </div>
 
       <div className='py-10 px-16 grid grid-cols-2 lg:flex lg:flex-row lg:gap-44 text-center font-bold ' >
-        <p className='flex items-center pt-5 lg:pt-0' > <FcNeutralTrading className='w-8 h-8 mr-1' /> Company</p>
-        <p className='flex items-center pt-5 lg:pt-0' > <FcNeutralTrading className='w-8 h-8 mr-1' /> Company</p>
-        <p className='flex items-center pt-5 lg:pt-0' > <FcNeutralTrading className='w-8 h-8 mr-1' /> Company</p>
-        <p className='flex items-center pt-5 lg:pt-0' > <FcNeutralTrading className='w-8 h-8 mr-1' /> Company</p>
-        <p className='flex col-span-2 items-center pt-5 lg:pt-0 mx-auto lg:mx-0 '><FcNeutralTrading className='w-8 h-8 mr-1' /> Company</p>
+        <p className='flex items-center pt-5 lg:pt-0' > <img src={cOne} alt="Company One" className='w-auto h-6 mr-1' /> </p>
+        <p className='flex items-center pt-5 lg:pt-0' > <img src={cTwo} alt="Company Two" className='w-auto h-6 mr-1' /> </p>
+        <p className='flex items-center pt-5 lg:pt-0' > <img src={cThree} alt="Company Three" className='w-auto h-6 mr-1' /> </p>
+        <p className='flex items-center pt-5 lg:pt-0' > <img src={cFour} alt="Company Four" className='w-auto h-6 mr-1' /> </p>
+        <p className='flex col-span-2 items-center pt-5 lg:pt-0 mx-auto lg:mx-0 '> <img src={cFive} alt="Company Five" className='w-auto h-6 mr-1' /> </p>
       </div>
+
+      
+      <div className=' text-left ml-10 lg:ml-0 lg:text-center text-2xl font-bold lg:text-4xl pt-10 ' >
+        Build your Crypto Portfolio
+      </div>
+      <div className='text-left ml-10 lg:ml-0 lg:text-center font-normal text-base lg:text-lg pt-6 ' >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br className='hidden lg:block' /> Feugiat nulla suspendisse tortor aene.
+      </div>
+
+      <div className='block lg:flex' >
+        <div className='p-10 space-y-5 ' >
+          {cardOneData.slice(0, 2).map((cardData, idx) => (
+            <Card1 key={idx} icon={cardData.icon} title={cardData.title} description={cardData.description}  />
+          ) )}
+        </div>
+
+        <div className='p-10 w-fit -my-14 lg:my-0 ' >
+          { cardTwoData.map((cardData, idx) =>
+            <Card2 key={idx} title={cardData.title} description={cardData.description} image={cardData.image} />        
+          ) }
+        </div>
+
+        <div className='p-10 space-y-5 ' >
+          {cardOneData.slice(2).map((cardData, idx) => (
+            <Card1 key={idx} icon={cardData.icon} title={cardData.title} description={cardData.description}  />
+          ) )}
+        </div>
+      </div>
+
+      <div className="text-center px-20 " >
+        {buttonData.slice(0, 1).map((buttonData, idx) => (
+          <Button key={idx} name={buttonData.name} />
+      ) )}
+      </div>
+
+      <div className='p-10 mt-10 block lg:flex' >
+        <div className='lg:w-1/2' >
+          <img src={twoPhones} alt="two phones" />
+        </div>
+
+        <div className='lg:w-1/2' >
+          <div>
+            <p className='text-left font-bold text-2xl pt-10 ' >Earn daily rewards on your idle tokens</p>
+            <p className='text-left font-normal text-lg pt-5  ' > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
+          </div>
+
+          <div className='pt-8 space-y-5 ' >
+            <p className='flex items-center' > <img src={market} alt="market" className='mr-5'/> Lowest fees in market</p>
+            <p className='flex items-center' ><img src={light} alt="light" className='mr-5'/> Fast and secure transactions</p>
+            <p className='flex items-center' ><img src={lock} alt="" className='mr-5' /> 256-bit secure encryption</p>
+          </div>
+        </div>
+      </div>
+
+      <div className='p-10 block lg:flex' >
+        <div className='lg:w-2/3' >
+          <div>
+            <p className='text-left font-bold text-2xl pt-10 lg:pl-10 ' >Earn daily rewards on your idle tokens</p>
+            <p className='text-left font-normal text-lg pt-5 lg:pl-10 ' > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
+          </div>
+
+          <div className='pt-8 space-y-5 lg:pl-10 ' >
+            <p className='flex items-center' ><img src={secure} alt="market" className='mr-5'/> 100% Private data</p>
+            <p className='flex items-center' ><img src={ninenine} alt="nine%" className='mr-5'/> 99.99% Uptime guarantee</p>
+            <p className='flex items-center' ><img src={message247} alt="secure" className='mr-5' /> 24/7 Dedicated support</p>
+          </div>
+        </div>
+
+        <div className='lg:w-1/2 pt-20' >
+          <img src={computerImage} alt="two phones" className='lg:w-[1000px] lg:h-auto ' />
+        </div>
+
+      </div>
+
+      <div className='block lg:flex bg-[#0328EE] p-10 font-sans mt-20 h-[568.5px] md:h-auto lg:h-[480px] text-center ' >
+        <div className='lg:w-1/2 lg:p-20' >
+          <p className='font-bold text-2xl ' >Explore endless possibilities with FinanceFlow</p>
+          <p className='pt-5 font-normal' >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
+
+          <div className='pt-5' >
+            {buttonData.slice(0, 1).map((buttonData, idx) => (
+              <Button3 key={idx} name={buttonData.name} />
+            ) )}
+          </div>
+        </div>
+
+        <div className='lg:w-1/2 -mt-8 lg:-mt-40 ' >
+            <img src={twophones2} alt="two phones" />
+
+        </div>
+      </div>
+
+      <div className='p-10 mt-20 block lg:flex justify-between' >
+        <p className='font-bold text-2xl font-sans text-center lg:text-left items-center ' >What our users say?</p>
+        <div className='pt-5 lg:pt-0' >
+            {buttonData.slice(0, 1).map((buttonData, idx) => (
+              <Button key={idx} name={buttonData.name} />
+            ) )}
+        </div>
+      </div>
+
+      <div className=' p-10 rounded-3xl' >
+        <Carousel />
+      </div>
+
+      <div className='p-10 block lg:flex' >
+        <div className='lg:w-2/3' >
+          <div>
+            <p className='text-left font-bold text-2xl pt-10 lg:pl-10 ' >Get started today</p>
+            <p className='text-left font-normal text-lg pt-5 lg:pl-10 ' >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aene.</p>
+          </div>
+
+          <div className='pt-8 space-y-5 lg:pl-10 ' >
+            <p className='flex items-center' ><img src={download} alt="market" className='mr-5'/>Download app</p>
+            <p className='flex items-center' ><img src={account} alt="nine%" className='mr-5'/>Create a free account</p>
+            <p className='flex items-center' ><img src={trade} alt="secure" className='mr-5' />Start trading</p>
+          </div>
+        </div>
+
+        <div className='lg:w-1/2 pt-20' >
+          <img src={video} alt="two phones" className='lg:w-[1000px] lg:h-auto ' />
+        </div>
+
+      </div>
+
     </div>
   )
 }
