@@ -9,5 +9,9 @@ export const buttonData = [
     {
         name: 'VIEW PRICING',
         // bg: 'white'
+    },
+    {
+        name: 'VIEW ALL ARTICLES',
+        // bg: 'white'
     }
 ]
