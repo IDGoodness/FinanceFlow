@@ -4,13 +4,13 @@ const Card4 = ( { title, description, icon, iconName, image } ) => {
   return (
     <>
 
-        <div className="bg-[#010D50] w-[350px] h-[596px] lg:w-[400px] p-10 rounded-3xl" >
+        <div className="bg-[#010D50] w-[350px] h-[596px] lg:w-[400px] p-10 rounded-3xl " >
             <div>
                 <p className="font-bold text-2xl " > {title} </p>
                 <p className=" mt-5 text-sm font-thin " > {description} </p>
             </div>
 
-            <div className="flex items-center bg-[#0328EE] w-fit rounded-full px-5 py-2 mt-5 ">
+            <div className="flex items-center bg-[#0328EE] w-fit rounded-full px-5 py-2 mt-5 hover:bg-[#0326ee7a] ">
                 <img src={icon} alt="store" />
                 <p className="ml-2" >
                     {iconName}

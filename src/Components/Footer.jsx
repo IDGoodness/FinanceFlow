@@ -48,15 +48,18 @@ const Footer = () => {
                 </div>
 
             </div>
-                <hr />
+            
+            <hr />
 
-                <div className='text-center mt-10 font-light ' >
+            <div className='block lg:flex justify-between' >
+                <div className='text-center mt-10 lg:mt-0 font-light ' >
                     All rights reserved
                 </div>
 
                 <div className='text-center text-xs font-thin' >
                     Chrestotes in the flesh...
                 </div>
+            </div>
         </div>
     </>
   )
