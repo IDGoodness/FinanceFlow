@@ -4,7 +4,7 @@ const Card4 = ( { title, description, icon, iconName, image } ) => {
   return (
     <>
 
-        <div className="bg-[#010D50] w-[350px] h-[596px] lg:w-[400px] p-10 rounded-3xl " >
+        <div className="bg-[#010D50] w-fit h-[596px] lg:w-[400px] p-10 rounded-3xl " >
             <div>
                 <p className="font-bold text-2xl " > {title} </p>
                 <p className=" mt-5 text-sm font-thin " > {description} </p>
@@ -18,7 +18,7 @@ const Card4 = ( { title, description, icon, iconName, image } ) => {
             </div>
 
             <div className="mt-20 " >
-                <img src={image} alt="phones" className="w-[405px] h-[300px] mx-auto " />
+                <img src={image} alt="phones" className="w-[405px] h-[250px] mx-auto " />
             </div>
         </div>
     

@@ -44,7 +44,7 @@ const Home = () => {
   return (
     <div className="bg-gray-900 text-white">
       <div className="block lg:flex bg-gray-900 lg:p-10 ">
-        <div className="">
+        <div className="lg:w-1/2">
           <p className="p-10 font-sans text-[38px] lg:text-[66px] text-white font-bold ">
             Buy, trade, and hold 350+ cryptocurrencies
           </p>
@@ -68,11 +68,11 @@ const Home = () => {
             </span>
           </div>
         </div>
-        <div className="p-10">
+        <div className="p-10 lg:w-1/2">
           <img
             src={computerImage}
             alt="Apple Computer"
-            className="lg:w-[1200px] lg:h-auto "
+            className="lg:w-[1200px] lg:h-auto mx-auto"
           />
         </div>
       </div>
@@ -125,7 +125,7 @@ const Home = () => {
         aene.
       </div>
 
-      <div className="block lg:flex">
+      <div className="block lg:flex justify-center">
         <div className="p-10 space-y-5 ">
           {cardOneData.slice(0, 2).map((cardData, idx) => (
             <Card1
@@ -324,7 +324,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="mt-10 mx-auto lg:mt-0 lg:p-10 block lg:flex gap-7 space-y-5 lg:space-y-0 ">
+        <div className="mt-10 lg:mt-0 lg:p-10 block lg:flex gap-7 space-y-5 lg:space-y-0 ">
           {cardThreeData.map((Data, idx) => (
             <Card3
               key={idx}
@@ -359,7 +359,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="mt-10 mx-auto lg:mt-0 lg:p-10 lg:-px-48 block lg:flex gap-7 space-y-5 lg:space-y-0 ">
+        <div className="mt-10 lg:mt-0 lg:p-10 lg:-px-48 block lg:flex gap-7 space-y-5 lg:space-y-0 ">
           {cardFourData.map((Data, idx) => (
             <Card4
               key={idx}
