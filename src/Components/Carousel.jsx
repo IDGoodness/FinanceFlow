@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import TestimonialCard from "./testimonialCard";
+import TestimonialCard from "./TestimonialCard";
 import { testimonialCardData } from "../../testimonialCardData";
 
 const Carousel = () => {
